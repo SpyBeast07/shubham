@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu"> <b>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="material-icons" onclick="closemenu()">close</i>
+                </ul></b>
+                <i class="material-icons" onclick="openmenu()">reorder</i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Raju</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/babu.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut architecto voluptate porro exercitationem, culpa molestiae autem necessitatibus accusamus dolore. Id, iusto. Magni, omnis debitis vero qui itaque culpa labore quas quis porro blanditiis repellat harum. Exercitationem animi quos natus nulla, minima illum suscipit architecto, excepturi, voluptatum mollitia ad fugiat perspiciatis!</p>
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" >
+                        <ul>
+                            <li><span>Web Development</span><br>Full Stack Web Development</li>
+                            <br>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June - Aug 2022</span><br>Software Development Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>BTech from JKLU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Project-------------------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project-image">
+                    <a href="#"><img src="images/work-1.png"></a>
+                    <div class="layer">
+                        <h3>Service Management System</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, accusantium?</p>
+                        <a href="#"><img src="./images/external-link.svg"></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <a href="#"><img src="images/work-2.png"></a>
+                    <div class="layer">
+                        <h3>Vehicle Management App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ex!</p>
+                        <a href="#"><img src="./images/external-link.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------------------Contact------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> shubhamsharma20@jklu.edu.in</p>
+                    <p>9610147006</p>
+                    <div class="social-icons">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
